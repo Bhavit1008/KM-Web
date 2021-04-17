@@ -6,6 +6,7 @@ const bodyParser=require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+var port = process.env.PORT || 80
 
 app.get('/', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
@@ -56,4 +57,4 @@ app.post('/sendemail', (req, res, next) => {
 
 
 
-app.listen(8002);
+app.listen(port);
