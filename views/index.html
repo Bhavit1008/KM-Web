@@ -11,7 +11,11 @@
       href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
       rel="stylesheet"
     />
-
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <title>Kaushal Marble</title>
   </head>
   <body>
@@ -67,7 +71,9 @@
           <a href="" class="home__social-icon"
             ><i class="bx bxl-instagram"></i
           ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-twitter"></i></a>
+          <a href="" class="home__social-icon"
+            ><i class="bx bxl-twitter"></i
+          ></a>
         </div>
 
         <div class="home__img">
@@ -156,63 +162,104 @@
         </div>
       </section>
 
-      <!--===== WORK =====-->
-      <section class="work section" id="portfolio">
-        <h2 class="section-title">Product Portfolio</h2>
-
-        <div class="work__container bd-grid">
-          <div class="work__img">
-            <img src="../img/marble1.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble2.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble3.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble4.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble5.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble6.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/marble7.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/pillar1.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/pillar2.jpg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/pillar3.JPG" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/pillar4.JPG" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/pillar5.JPG" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/coaster1.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/coaster2.jpeg" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/coaster3.JPG" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/Block1.JPG" alt="" />
-          </div>
-          <div class="work__img">
-            <img src="../img/block2.JPG" alt="" />
+      
+      <!--Gallery -->
+      <section class="skills section" id="portfolio">
+        <h2 class="section-title">Products</h2>
+        <div id="myBtnContainer">
+          <div class="text-center">
+            <button class="btn btn_filter" onclick="filterSelection('Slabs')">
+              Slabs
+            </button>
+            <button class="btn btn_filter" onclick="filterSelection('Pillars')">
+              Pillars
+            </button>
+            <button class="btn btn_filter" onclick="filterSelection('Tiles')">
+              Tiles
+            </button>
+            <button
+              class="btn btn_filter"
+              onclick="filterSelection('Articles')"
+            >
+              Articles
+            </button>
           </div>
         </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="col-lg-4 column Slabs">
+            <div class="content">
+              <img src="../img/marble1.jpeg" alt="" style="width: 100%" />
+            </div>
+          </div>
+          <div class="col-lg-4 column Slabs">
+            <div class="content">
+              <img src="../img/marble2.jpg" alt="" style="width: 100%" />
+            </div>
+          </div>
+          <div class="col-lg-4 column Slabs">
+            <div class="content">
+              <img src="../img/marble3.jpeg" alt="" style="width: auto" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 column Pillars">
+            <div class="content">
+              <img src="../img/pillar1.jpg" alt="" style="width: auto" />
+            </div>
+          </div>
+          <div class="col-lg-4 column Pillars">
+            <div class="content">
+              <img src="../img/pillar2.jpg" alt="" style="width: auto" />
+            </div>
+          </div>
+          <div class="col-lg-4 column Pillars">
+            <div class="content">
+              <img src="../img/pillar3.jpg" alt="" style="width: 100%" />
+            </div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 column Tiles">
+                <div class="content">
+                  <img src="../img/coaster1.jpeg" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="col-lg-4 column Tiles">
+                <div class="content">
+                  <img src="../img/coaster2.jpeg" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="col-lg-4 column Tiles">
+                <div class="content">
+                  <img src="../img/coaster3.jpg" alt="" style="width: 100%" />
+                </div>
+              </div>
+          </div>
+         
+          <div class="row">
+            <div class="col-lg-4 column Articles">
+                <div class="content">
+                  <img src="../img/Block1.jpg" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="col-lg-4 column Articles">
+                <div class="content">
+                  <img src="../img/block2.jpg" alt="" style="width: 100%" />
+                </div>
+              </div>
+              <div class="col-lg-4 column Articles">
+                <div class="content">
+                  <img src="../img/coaster3.jpg" alt="" style="width: 100%" />
+                </div>
+              </div>
+          </div>
+          
+
+          <!-- END GRID -->
+        
       </section>
 
       <!--===== CONTACT =====-->
