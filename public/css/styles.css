@@ -161,8 +161,9 @@ img{
 }
 .nav__logo{
   color: var(--second-color);
-  width: 85px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
+  padding: auto;
 }
 .nav__toggle{
   color: var(--second-color);
