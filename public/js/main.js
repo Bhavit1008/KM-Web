@@ -55,5 +55,3 @@ sr.reveal('.skills__img',{delay: 100});
 
 /*SCROLL CONTACT*/
 //sr.reveal('.contact__input',{interval: 100}); 
-
-
