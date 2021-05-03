@@ -365,6 +365,12 @@ img{
   color: #fff;
   margin: 0 var(--mb-2)
 }
+.mapouter{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 18px;
+  border-radius: 25px;
+}
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
