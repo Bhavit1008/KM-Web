@@ -163,7 +163,7 @@ img{
   color: var(--second-color);
   width: 65px;
   height: 65px;
-  padding: auto;
+  padding-bottom: auto;
 }
 .nav__toggle{
   color: var(--second-color);
@@ -354,7 +354,7 @@ img{
 }
 .footer__title{
   font-size: 2rem;
-  margin-bottom: var(--mb-4);
+  
 }
 .footer__content{
   font-size:  1rem;
@@ -374,6 +374,11 @@ img{
   margin-bottom: 18px;
   border-radius: 25px;
 }
+
+.footer__company { font-size:1em;
+
+font-family: Poppins;}
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
