@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({extended:true}))
 
+var port = process.env.PORT || 80
 
 app.set('views', './views');
 app.set('view engine', 'ejs');
@@ -48,7 +49,7 @@ app.post("/sendemail",(req,res)=>{
     res.redirect("/");
 })
 
-app.listen(3000,function(){
-    console.log("server is listening at 3000")
+app.listen(port,function(){
+    console.log("server is listening at 80")
 })
 
