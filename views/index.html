@@ -486,7 +486,7 @@
 
         <div class="contact__container bd-grid" >
           <h2 class="section-title">Contact Us</h2>
-          <form action="/sendemail" class="contact__form" method="POST" style="width:100%;padding:40px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
+          <form autocomplete="off" id="contact-form"onsubmit="showHide()" action="/sendemail" class="contact__form" method="POST" style="width:100%;padding:40px;box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;">
             <input
               type="text"
               name="name"
@@ -514,7 +514,7 @@
               placeholder="Enter Query"
               class="contact__input"
             ></textarea>
-            <input type="submit" value="Send" class="contact__button button" />
+            <input onclick="resetForm()" type="submit" value="Send" class="contact__button button" />
           </form>
         </div>
       </section>

@@ -59,7 +59,8 @@ app.post("/sendemail",(req,res)=>{
         time : hours +":"+minutes 
     });
     newQuery.save();
-    res.redirect("/");
+    res.render('greetings');
+
 })
 
 app.listen(port,function(){
