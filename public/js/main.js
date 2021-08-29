@@ -58,7 +58,7 @@ sr.reveal('.home__social-icon',{ interval: 100});
 
 /gallery/
 
-filterSelection("Blocks") // Execute the function and show all columns
+filterSelection("Slabs") // Execute the function and show all columns
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("column");
