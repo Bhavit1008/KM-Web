@@ -28,7 +28,10 @@ mongoose.connect(url,connectionParams)
 const querySchema = {
     name: String,
     email: String,
-    subject: String
+    phone: String,
+    subject: String,
+    date: String,
+    time: String
 }
 
 
@@ -40,10 +43,20 @@ app.get("/",(req,res) => {
 
 
 app.post("/sendemail",(req,res)=>{
+    let ts = Date.now();
+    let date_ob = new Date(ts);
+    let date = date_ob.getDate();
+    let month = date_ob.getMonth() + 1;
+    let year = date_ob.getFullYear();
+    let hours = date_ob.getHours();
+    let minutes = date_ob.getMinutes();
     let newQuery = new Query({
         name: req.body.name,
         email: req.body.email,
-        subject : req.body.subject
+        phone: req.body.phone,
+        subject : req.body.subject,
+        date : date +"-"+ month +"-"+ year,
+        time : hours +":"+minutes 
     });
     newQuery.save();
     res.redirect("/");
